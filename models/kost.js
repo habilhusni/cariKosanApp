@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Kost = sequelize.define('Kost', {
-    name: DataTypes.STRING,
+    nama: DataTypes.STRING,
     deskriptif: DataTypes.STRING,
     KotaId: DataTypes.INTEGER,
     OwnerId: DataTypes.INTEGER

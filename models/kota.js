@@ -1,10 +1,7 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Kota = sequelize.define('Kota', {
-    nama_kota: {
-      type: DataTypes.STRING,
-      unique: true
-    }
+    nama_kota: DataTypes.STRING
   }, {
     classMethods: {
       associate: function(models) {

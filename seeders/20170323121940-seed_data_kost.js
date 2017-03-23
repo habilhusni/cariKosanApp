@@ -13,10 +13,38 @@ module.exports = {
       }], {});
     */
     return queryInterface.bulkInsert('Kosts', [
-      {nama: 'Kost Haji Midun', deskriptif: 'Kost yang pas untuk anda', KotaId:2, OwnerId:1},
-      {nama: 'Kost Ibu Saidah', deskriptif: 'Kost pilihan anda', KotaId:1, OwnerId:2},
-      {nama: 'Kost Mantap', deskriptif: 'Pilihan terbaik untuk kos', KotaId:2, OwnerId:2},
-      {nama: 'Kost SegarSari', deskriptif: 'Kost yang sejuk', KotaId:2, OwnerId:1}
+      {
+       nama: 'Kost Haji Midun', 
+       deskriptif: 'Kost yang pas untuk anda',
+       KotaId:2,
+       OwnerId:1,
+       createdAt: new Date(),
+       updatedAt: new Date()
+      },
+      {
+       nama: 'Kost Ibu Saidah',
+       deskriptif: 'Kost pilihan anda',
+       KotaId:1,
+       OwnerId:2,
+       createdAt: new Date(),
+       updatedAt: new Date()
+      },
+      {
+       nama: 'Kost Mantap', 
+       deskriptif: 'Pilihan terbaik untuk kos', 
+       KotaId:2, 
+       OwnerId:2,
+       createdAt: new Date(),
+       updatedAt: new Date()
+      },
+      {
+       nama: 'Kost SegarSari',
+       deskriptif: 'Kost yang sejuk', 
+       KotaId:2, 
+       OwnerId:1,
+       createdAt: new Date(),
+       updatedAt: new Date()
+      }
     ],{})
   },
 
@@ -29,10 +57,38 @@ module.exports = {
       return queryInterface.bulkDelete('Person', null, {});
     */
     return queryInterface.bulkDelete('Kosts', [
-      {nama: 'Kost Haji Midun', deskriptif: 'Kost yang pas untuk anda', KotaId:2, OwnerId:1},
-      {nama: 'Kost Ibu Saidah', deskriptif: 'Kost pilihan anda', KotaId:1, OwnerId:2},
-      {nama: 'Kost Mantap', deskriptif: 'Pilihan terbaik untuk kos', KotaId:2, OwnerId:2},
-      {nama: 'Kost SegarSari', deskriptif: 'Kost yang sejuk', KotaId:2, OwnerId:1}
+      {
+       nama: 'Kost Haji Midun', 
+       deskriptif: 'Kost yang pas untuk anda',
+       KotaId:2,
+       OwnerId:1,
+       createdAt: new Date(),
+       updatedAt: new Date()
+      },
+      {
+       nama: 'Kost Ibu Saidah',
+       deskriptif: 'Kost pilihan anda',
+       KotaId:1,
+       OwnerId:2,
+       createdAt: new Date(),
+       updatedAt: new Date()
+      },
+      {
+       nama: 'Kost Mantap', 
+       deskriptif: 'Pilihan terbaik untuk kos', 
+       KotaId:2, 
+       OwnerId:2,
+       createdAt: new Date(),
+       updatedAt: new Date()
+      },
+      {
+       nama: 'Kost SegarSari',
+       deskriptif: 'Kost yang sejuk', 
+       KotaId:2, 
+       OwnerId:1,
+       createdAt: new Date(),
+       updatedAt: new Date()
+      }
     ],{})
   }
 };
