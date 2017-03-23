@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
+const models = require('../models')
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('Pilih sebagai Pencari ataupun Pemilik');
+
+
 });
 
 router.get('/owner/register',function(req, res, next) {
