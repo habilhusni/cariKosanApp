@@ -1,0 +1,155 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+	<h1>Temukan Kostan yang kamu inginkan!</h1>
+	<p>Welcome to <%= title %></p>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title><%= title %></title>
+<link href="stylesheets/select.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Theme CSS -->
+	<link href="css/freelancer.min.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+	<!-- Navigation -->
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand" href="#page-top"><%= title %></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li class="page-scroll">
+						<a href="#contact">Login</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<!-- Header -->
+	<header>
+		<div class="container" id="maincontent" tabindex="-1">
+			<div class="row">
+				<div class="col-lg-12">
+					<img class="img-responsive" src="images/house.png" alt="">
+					<div class="intro-text">
+						<h1 class="name">Kosan Apps</h1>
+						<span class="skills">Temukan - Hubungi - Nikmati</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Pilih Pencarian Berdasarkan Grid Section -->
+	<section id="portfolio">
+		<div class="container">
+		  <div class="row">
+
+		  </div>
+		  <div class="row">
+			<div class="col-lg-6 text-center">
+
+			  <form action="/kost?" method="GET">
+			  <h3>Berdasarkan Kota</h3>
+
+			  <select name="kota" class="form-control">
+			  <% citys.forEach(city => {%>
+				<option value="<%= city.nama_kota %>"><%= city.nama_kota %></option>
+			  <%})%>
+				</select></br>
+			  <button>daftar</button>
+			</div>
+		  </form>
+			<a href="/kost/">cari</a>
+			<div class="col-lg-6 text-center">
+					<h3>Berdasarkan Harga</h3>
+			<select name="harga" class="form-control">
+						<option value="murah">Murah</option>
+						<option value="menengah">Menengah</option>
+						<option value="mahal">Mahal</option>
+			</select>
+
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+				</div>
+				<div class="col-sm-2 portfolio-item">
+			</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="success" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>About</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-2">
+					<p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+				</div>
+				<div class="col-lg-4">
+					<p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+				</div>
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
